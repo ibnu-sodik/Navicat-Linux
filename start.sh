@@ -25,6 +25,7 @@ fi
 # Build navicat patcher
 echo
 echo "Building Navicat Patcher..."
+git config --global --add safe.directory '*'
 cd build && cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build . -- -j4
 cp navicat-patcher navicat-keygen /patcher/bin 2>/dev/null || true
 cd /patcher

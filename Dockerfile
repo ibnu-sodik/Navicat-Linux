@@ -12,7 +12,8 @@ RUN apt update && apt install -y \
     libfuse2 \
     appstream \
     file \
-    rapidjson-dev
+    rapidjson-dev && \
+    git config --global --add safe.directory '*'
 
 WORKDIR /patcher
 
